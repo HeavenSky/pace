@@ -1,0 +1,95 @@
+@color: #29d;
+.pace {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2000;
+	margin: auto;
+	width: 100px;
+	height: 60px;
+	pointer-events: none;
+	user-select: none;
+	.pace-progress {
+		position: absolute;
+		z-index: 2000;
+		width: 100px;
+		height: 60px;
+		transform: translate3d(0, 0, 0) !important;
+	}
+	.pace-progress:before {
+		position: absolute;
+		z-index: 999;
+		display: block;
+		margin: 10px 0 0 30px;
+		padding: 20% 0 7px;
+		width: 50%;
+		height: 40%;
+		border-radius: 50%;
+		background-color: @color;
+		color: #fff;
+		content: attr(data-progress-text);
+		text-align: center;
+		font-weight: 100;
+		font-size: 14px;
+		font-family: "Helvetica Neue", sans-serif;
+		line-height: 1;
+	}
+	.pace-activity {
+		position: absolute;
+		z-index: 2000;
+		display: block;
+		width: 100px;
+		height: 60px;
+		font-size: 15px;
+		line-height: 1;
+		animation: pace-theme-center-atom-spin 2s linear infinite;
+	}
+	.pace-activity {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100px;
+		height: 60px;
+		border: 5px solid @color;
+		border-radius: 50%;
+		content: ' ';
+	}
+	.pace-activity:after {
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		display: block;
+		width: 100px;
+		height: 60px;
+		border: 5px solid @color;
+		border-radius: 50%;
+		content: ' ';
+		transform: rotate(60deg);
+	}
+	.pace-activity:before {
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		display: block;
+		width: 100px;
+		height: 60px;
+		border: 5px solid @color;
+		border-radius: 50%;
+		content: ' ';
+		transform: rotate(120deg);
+	}
+	&.pace-inactive {
+		display: none;
+	}
+}
+@keyframes pace-theme-center-atom-spin {
+	0% {
+		transform: rotate(0deg)
+	}
+	100% {
+		transform: rotate(359deg)
+	}
+}

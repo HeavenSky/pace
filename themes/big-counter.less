@@ -1,0 +1,30 @@
+@color: #29d;
+.pace {
+	pointer-events: none;
+	user-select: none;
+	.pace-progress {
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 2000;
+		width: 5rem;
+		height: 5rem;
+		transform: translate3d(0, 0, 0) !important;
+	}
+	.pace-progress:after {
+		position: absolute;
+		top: 0;
+		right: .5rem;
+		display: block;
+		color: fade(@color, 0.2);
+		content: attr(data-progress-text);
+		text-align: right;
+		font-weight: 100;
+		font-size: 5rem;
+		font-family: "Helvetica Neue", sans-serif;
+		line-height: 1;
+	}
+	&.pace-inactive .pace-progress {
+		display: none;
+	}
+}

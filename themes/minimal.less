@@ -1,0 +1,30 @@
+/*
+@black: #000;
+@white: #fff;
+@silver: #d6d6d6;
+@red: #ee3148;
+@orange: #eb7a55;
+@yellow: #fcd25a;
+@green: #22df80;
+@blue: #29d;
+@pink: #e90f92;
+@purple: #7c60e0;
+*/
+
+@color: #29d;
+.pace {
+	pointer-events: none;
+	user-select: none;
+	.pace-progress {
+		position: fixed;
+		top: 0;
+		right: 100%;
+		z-index: 2000;
+		width: 100%;
+		height: 2px;
+		background-color: @color;
+	}
+	&.pace-inactive {
+		display: none;
+	}
+}

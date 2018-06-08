@@ -1,0 +1,45 @@
+@color: #29d;
+@white: #fff;
+.pace {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	overflow: hidden;
+	width: 100%;
+	height: 12px;
+	background-color: @white;
+	pointer-events: none;
+	user-select: none;
+	.pace-progress {
+		position: fixed;
+		top: 0;
+		right: 100%;
+		bottom: 0;
+		overflow: hidden;
+		width: 100%;
+		background-color: @white;
+	}
+	.pace-activity {
+		position: fixed;
+		top: 0;
+		right: -32px;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient( 45deg, fade(@white, 0.2) 25%, transparent 25%, transparent 50%, fade(@white, 0.2) 50%, fade(@white, 0.2) 75%, transparent 75%, transparent);
+		background-size: 32px 32px;
+		transform: translate3d(0, 0, 0);
+		animation: pace-theme-barber-shop-motion 500ms linear infinite;
+	}
+	&.pace-inactive {
+		display: none;
+	}
+}
+@keyframes pace-theme-barber-shop-motion {
+	0% {
+		transform: none;
+	}
+	100% {
+		transform: translate(-32px, 0);
+	}
+}
