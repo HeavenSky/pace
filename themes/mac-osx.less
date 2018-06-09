@@ -1,50 +1,48 @@
 @color: #29d;
 @white: #fff;
-@bgcolor: saturate( darken(@color, 0.2), 0.65);
-@shadow: saturate( darken(@color, 0.2), 0.7);
+@bgcolor: saturate( darken(@color, 20%), 65%);
+@shadow: saturate( darken(@color, 20%), 70%);
 .pace {
-	pointer-events: none;
-	user-select: none;
-	overflow: hidden;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 2000;
+	overflow: hidden;
 	width: 100%;
 	height: 12px;
 	background-color: @white;
-}
-.pace-inactive {
-	display: none;
-}
-.pace .pace-progress {
-	background-color: @bgcolor;
-	position: fixed;
-	top: 0;
-	right: 100%;
-	width: 100%;
-	height: 12px;
-	overflow: hidden;
-	border-radius: 0 0 4px 0;
-	box-shadow: inset -1px 0 @shadow, inset 0 -1px @shadow, inset 0 2px fade(@white, 0.5), inset 0 6px fade(@white, .3);
-}
-.pace .pace-activity {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: -28px;
-	bottom: 0;
-	background-image: radial-gradient(fade(@white, .65) 0%, fade(@white, .15) 100%);
-	background-size: 28px 100%;
-	animation: pace-theme-mac-osx-motion 500ms linear infinite;
+	pointer-events: none;
+	user-select: none;
+	.pace-progress {
+		position: fixed;
+		top: 0;
+		right: 100%;
+		overflow: hidden;
+		width: 100%;
+		height: 12px;
+		border-radius: 0 0 4px 0;
+		background-color: @bgcolor;
+		box-shadow: inset -1px 0 @shadow, inset 0 -1px @shadow, inset 0 2px fade(@white, 50%), inset 0 6px fade(@white, 30%);
+	}
+	.pace-activity {
+		position: fixed;
+		top: 0;
+		right: -28px;
+		bottom: 0;
+		left: 0;
+		background-image: radial-gradient(fade(@white, 65%) 0%, fade(@white, 15%) 100%);
+		background-size: 28px 100%;
+		animation: pace-theme-mac-osx-motion 500ms linear infinite;
+	}
+	&.pace-inactive {
+		display: none;
+	}
 }
 @keyframes pace-theme-mac-osx-motion {
 	0% {
 		transform: none;
-		transform: none;
 	}
 	100% {
-		transform: translate(-28px, 0);
 		transform: translate(-28px, 0);
 	}
 }

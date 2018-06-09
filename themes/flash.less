@@ -3,18 +3,18 @@
 	pointer-events: none;
 	user-select: none;
 	.pace-progress {
-		background-color: @color;
 		position: fixed;
-		z-index: 2000;
 		top: 0;
 		right: 100%;
+		z-index: 2000;
 		width: 100%;
 		height: 2px;
+		background-color: @color;
 	}
 	.pace-progress-inner {
-		display: block;
 		position: absolute;
 		right: 0px;
+		display: block;
 		width: 100px;
 		height: 100%;
 		box-shadow: 0 0 10px @color, 0 0 5px @color;
@@ -22,11 +22,11 @@
 		transform: rotate(3deg) translate(0px, -4px);
 	}
 	.pace-activity {
-		display: block;
 		position: fixed;
-		z-index: 2000;
 		top: 15px;
 		right: 15px;
+		z-index: 2000;
+		display: block;
 		width: 14px;
 		height: 14px;
 		border: solid 2px transparent;
