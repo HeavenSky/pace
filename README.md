@@ -1,4 +1,4 @@
-### Forked
+### Fork
 Forked from [HubSpot/pace](https://raw.github.com/HubSpot/pace)
 
 ### Docs
@@ -9,7 +9,7 @@ Automatically add a progress bar to your site
 ### Example
 ```html
 <head>
-	<script src="https://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-	<link href="https://cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-barber-shop.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css" />
+	<script type="text/javascript" src="https://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 </head>
 ```
