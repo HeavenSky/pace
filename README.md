@@ -1,5 +1,5 @@
 ### Fork
-Forked from [HubSpot/pace](https://raw.github.com/HubSpot/pace)
+Forked from [HubSpot/pace](https://github.com/HubSpot/pace)
 
 ### Docs
 Automatically add a progress bar to your site

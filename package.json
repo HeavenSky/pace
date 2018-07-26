@@ -3,6 +3,7 @@
 	"version": "1.0.2",
 	"description": "forked from https://github.com/HubSpot/pace",
 	"authors": [
+		"Heaven Li <li.heaven@qq.com>",
 		"Zack Bloom <zackbloom@gmail.com>",
 		"Adam Schwartz <adam.flynn.schwartz@gmail.com>"
 	],
