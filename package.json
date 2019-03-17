@@ -1,5 +1,5 @@
 {
-	"name": "pace",
+	"name": "pace-less",
 	"version": "1.0.2",
 	"description": "forked from https://github.com/HubSpot/pace",
 	"authors": [
@@ -11,6 +11,6 @@
 	"main": "pace.js",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/HeavenSky/pace.git"
+		"url": "https://github.com/HeavenSky/pace"
 	}
 }

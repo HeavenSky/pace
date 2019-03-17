@@ -17,5 +17,5 @@ Automatically add a progress bar to your site
 ### New Feature Change
 * Support import in ESM:
 ```js
-import Pace from "pacejs";
+import Pace from "pace-less";
 ```
