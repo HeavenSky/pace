@@ -13,3 +13,9 @@ Automatically add a progress bar to your site
 	<script type="text/javascript" src="https://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 </head>
 ```
+
+### New Feature Change
+* Support import in ESM:
+```js
+import Pace from "pacejs";
+```

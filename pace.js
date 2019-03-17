@@ -1,4 +1,4 @@
-/* pace 1.0.2 */
+/* pace 1.0.2 from https://github.com/HubSpot/pace */
 (function() {
 	var AjaxMonitor,
 		Bar,
@@ -1014,7 +1014,7 @@
 	};
 
 	if (typeof define === "function" && define.amd) {
-		define(["pace"], function() {
+		define(function() {
 			return Pace;
 		});
 	} else if (typeof exports === "object") {
